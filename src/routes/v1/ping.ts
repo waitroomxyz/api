@@ -6,6 +6,10 @@ const ping: FastifyPluginAsyncTypebox = async (app) => {
     "/ping",
     {
       schema: {
+        description:
+          "A simple ping/pong endpoint to check if the API is responsive.",
+        tags: ["Healthcheck"],
+
         response: {
           200: Type.Object({
             status: Type.String(),

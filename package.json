@@ -7,7 +7,7 @@
   "author": "Sourav Kumar Nanda <souravkumarnanda4@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "migrate": "drizzle-kit migrate"
@@ -24,6 +24,7 @@
     "@fastify/session": "^11.1.0",
     "@fastify/swagger": "^9.5.1",
     "@fastify/type-provider-typebox": "^5.2.0",
+    "@scalar/fastify-api-reference": "^1.35.5",
     "@sinclair/typebox": "^0.34.41",
     "close-with-grace": "^2.2.0",
     "drizzle-orm": "^0.44.5",
@@ -35,7 +36,7 @@
   "devDependencies": {
     "@types/node": "^24.3.3",
     "drizzle-kit": "^0.31.4",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
     "typescript": "^5.9.2"
   }
 }
