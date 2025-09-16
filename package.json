@@ -10,7 +10,11 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "migrate": "drizzle-kit migrate"
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:check": "drizzle-kit check"
   },
   "dependencies": {
     "@fastify/autoload": "^6.3.1",
@@ -24,6 +28,7 @@
     "@fastify/session": "^11.1.0",
     "@fastify/swagger": "^9.5.1",
     "@fastify/type-provider-typebox": "^5.2.0",
+    "@neondatabase/serverless": "^1.0.1",
     "@scalar/fastify-api-reference": "^1.35.5",
     "@sinclair/typebox": "^0.34.41",
     "close-with-grace": "^2.2.0",
@@ -35,6 +40,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.3.3",
+    "dotenv": "^17.2.2",
     "drizzle-kit": "^0.31.4",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
