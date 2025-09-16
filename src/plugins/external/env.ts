@@ -38,6 +38,8 @@ const schema = Type.Object({
   // Waitlist specific
   WAITLIST_RATE_LIMIT_MAX: Type.Number({ default: 5 }),
   WAITLIST_RATE_LIMIT_WINDOW: Type.String({ default: "1 hour" }),
+
+  EMAILABLE_API_KEY: Type.Optional(Type.String()),
 });
 
 export type Config = Static<typeof schema>;
